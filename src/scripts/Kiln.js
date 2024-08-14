@@ -1,4 +1,4 @@
-let firePottery = (pottery, temp) => {
+export const firePottery = (pottery, temp) => {
     pottery.fired = true
 
     if (temp > 2200) {
@@ -9,5 +9,3 @@ let firePottery = (pottery, temp) => {
     }
     return pottery
 }
-
-module.exports = { firePottery }
