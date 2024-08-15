@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > Originally, I tried using "require" syntax to import my modules, however I realized I am an idiot and was using "require" for HTML, which obviously wont work since most browsers now use "import" syntax for modules. I assembled all of the exported modules into main.js which simply logged my functions outputs. The crux of the JS code with regards to HTML, is the PotteryList.js module and the functions within it. That module converts the pottery data passed through the functions in each other module, into HTML, properly displaying our outputs onto our browser's page.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/4abd31abfe2840da901beabb1e7601f5
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > When we write a moderately complex program, we want to partition our code into modules. This makes the code easier to reuse, debug and edit later on when needed. We COULD include all of the code into one .js file, however organizing becomes messy and the code maybe difficult to decipher any bugs if/when they occur.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > We would first need to change the conditionals in PotteryCatalog.js to meet the new requirements for cracked pottery. We would change the if(!pottery.cracked) to if(pottery.cracked) and add a condition, if a pottery piece is broken, we sell it for 2.50. After this, we include the other conditions as an else statement attached to if(pottery.cracked), for the non-cracked prices. Once completed, the HTML should display the cracked and non cracked pottery in the webpage.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/207cacae368c4e5b8671fbac38507be8
